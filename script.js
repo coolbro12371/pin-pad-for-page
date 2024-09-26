@@ -14,12 +14,15 @@ let modal = document.getElementById("modal");
 let result = document.getElementById("result");
 let closeBtn = document.getElementById("close");
 submitBtn.addEventListener("click", () = > {
+    if (!pinInput || !pinInput.value || pinInput.value === "") {
+        alert("Please enter a pin first")
     } else if (pinInput.value === correctPin) {
         alert("Correct PIN");
-    else {
+        window.location.replace("https://coolbro12371.github.io/secrets-exposed-video/")
+    } else {
         alert("Incorrect PIN")
     }
-    pinInput.value = "*******"
+    pinInput.value = ""
 });
 delBtn.addEventListener("click", () = > {
     if (pinInput.value) pinInput.value = pinInput.value.substr(0, pinInput.value.length - 1)
