@@ -16,8 +16,8 @@ let closeBtn = document.getElementById("close");
 submitBtn.addEventListener("click", () = > {
     } else if (pinInput.value === correctPin) {
         alert("Correct PIN");
-        if(x > 10)
-{
+        (x > 10)
+    {
     document.getElementById('playsound1').play();
     alert("Thank you!");
 }
