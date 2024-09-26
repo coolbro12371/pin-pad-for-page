@@ -19,12 +19,11 @@ submitBtn.addEventListener("click", () = > {
         (x > 10)
     {
     document.getElementById('playsound1').play();
-    alert("Thank you!");
-}
-    } else {
+    }
+    else {
         alert("Incorrect PIN")
     }
-    pinInput.value = ""
+    pinInput.value = "*******"
 });
 delBtn.addEventListener("click", () = > {
     if (pinInput.value) pinInput.value = pinInput.value.substr(0, pinInput.value.length - 1)
