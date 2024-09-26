@@ -1,4 +1,4 @@
-let correctPin = "7355608";
+let correctPin = "999";
 let btns = document.getElementsByClassName("pinpad-btn");
 let pinInput = document.getElementById("pinpad-input");
 for (let i = 0; i < btns.length; i++) {
@@ -16,10 +16,6 @@ let closeBtn = document.getElementById("close");
 submitBtn.addEventListener("click", () = > {
     } else if (pinInput.value === correctPin) {
         alert("Correct PIN");
-        (x > 10)
-    {
-    document.getElementById('playsound1').play();
-    }
     else {
         alert("Incorrect PIN")
     }
